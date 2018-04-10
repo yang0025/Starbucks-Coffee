@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>星巴克</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+
+        }
+
+
+        .nav1 a,
+        .nav2 a {
+            text-decoration: none;
+            color: black;
+
+
+        }
+
+        .div1 {
+            position: fixed;
+        }
+
+
+
+        .div1 .nav1 a {
+            height: 50px;
+            line-height: 50px;
+            /* border: 1px solid red; */
+            font-size: 18px;
+            margin-left: 20px;
+        }
+
+        .div1 .nav2 {
+            /* border: 1px solid red; */
+            margin-top: 300px;
+        }
+
+        .div1 .nav2 a {
+            display: block;
+            margin-left: 50px;
+            padding-top: 20px;
+
+        }
+
+        .div1 .nav2 .text {
+            font-size: 18px;
+        }
+
+        .div1 .nav2 .text2 {
+            color: gray;
+            font-weight: normal;
+
+        }
+
+
+        .container {
+            display: flex;
+           
+         
+
+
+        }
+
+        .div1 {
+            width: 25%;
+            
+
+            /* border: 1px solid red; */
+        }
+
+        .container .div1 .nav2 .underline {
+
+            border-bottom: 3px solid green;
+            width: 70px;
+            font-weight: 500;
+
+
+        }
+
+
+        main {
+            width: 75%;
+            border: 2px solid rgb(249, 249, 249);
+            /* border: 1px solid red; */
+            margin-left: 25%;
+        }
+
+        main p {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .div2 {
+            width: 100%;
+            /* border: 1px solid red; */
+        }
+
+        .div3 {
+            width: 100%;
+        }
+
+
+
+        .div2 a .img1 {
+            margin: 60px 20px;
+            width: 97%;
+
+
+
+
+        }
+
+        .div2 a #firstimg {
+            margin-top: 0;
+            width: 100%;
+            padding-left: 0;
+        }
+
+
+        .div3 .food img {
+            /* border: 1px solid black; */
+            width: 251px;
+            height: 251px;
+
+
+
+        }
+
+        .div3 .box {
+            width: 1000px;
+            /* border: 5px solid red; */
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            justify-content: space-around;
+            /* align-content: flex-start; */
+            align-items: flex-start;
+        }
+
+        .div3 .food p {
+            width: 250px;
+            /* height: 250px; */
+            margin-bottom: 80px;
+        }
+
+        main .title,
+        .div3 {
+            background-color: rgb(247, 247, 247);
+
+        }
+
+        main .title {
+            /* border: 1px solid red; */
+            height: 100px;
+            line-height: 100px;
+        }
+       
+        
+
+        button {
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(0, 168, 98);
+            float: right;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+           
+            
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="div1">
+
+            <nav class="nav1">
+                <a href="">
+                    <img src="images/logo.svg" alt="" id="logo">
+                </a>
+                <a href="" class="logotext">STORES</a>
+                <a href="" class="logotext">MY ACCOUNT</a>
+                <a href="" class="logotext"> MENU</a>
+            </nav>
+            <nav class="nav2">
+                <a href="">
+                    <h1>Menu</h1>
+                </a>
+                <a href="" class="text underline">Featured</a>
+                <a href="" class="text text2">Beverages</a>
+                <a href="" class="text text2">Food</a>
+                <a href="" class="text text2">Coffe products</a>
+                <a href="" class="text text2">Merchandise</a>
+            </nav>
+        </div>
+        <main>
+
+            <div class="div2">
+                <a href="#food">
+                    <img src="images/1.jpg" alt=" " id="firstimg">
+                </a>
+                <a href="#food">
+                    <img src="images/2.jpg" alt="" class="img1">
+                </a>
+                <a href="#food">
+                    <img src="images/3.jpg" alt="" class="img1">
+                </a>
+                <a href="#food">
+                    <img src="images/4.jpg" alt="" class="img1">
+                </a>
+                <a href="#food">
+                    <img src="images/5.jpg" alt="" class="img1">
+                </a>
+                <a href="#food">
+                    <img src="images/6.jpg" alt="" class="img1">
+                </a>
+                <a href="#food">
+                    <img src="images/7.jpg" alt="" class="img1">
+                </a>
+
+            </div>
+            <p class="title">Limited time offer products</p>
+            <div class="div3">
+                <section class="box">
+                    <section class="food" id="food">
+                        <img src="images/s1.jpg" alt="">
+                        <p>Blueberry Macchiato</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s2.jpg" alt="">
+                        <p>Hazelnut Flavored Macchiato</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s3.jpg" alt="">
+                        <p>Cold Brew Coffee Mousse Cup</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s4.jpg" alt="">
+                        <p>Spring Artistry Vanilla Tart</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s5.jpg" alt="">
+                        <p>Spring Cherry Blossoming Mousse Cake </p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s6.jpg" alt="">
+                        <p>Starbucks® Papua New Guinea Highlands</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s7.jpg" alt="">
+                        <p>Starbucks Reserve™ Costa Rica Hacienda Alsacia</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s8.jpg" alt="">
+                        <p>Starbucks Reserve™ Sun Dried Ethiopia Yirgacheffe Chelelektu</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s9.jpg" alt="">
+                        <p>Starbucks Reserve™ Guatemala Valmar Estate</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s10.jpg" alt="">
+                        <p>Starbucks Reserve™ Nicaragua La Victoria</p>
+                    </section>
+
+                    <section class="food">
+                        <img src="images/s12.jpg" alt="">
+                        <p>Special Edition White Siren MSR Card</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s13.jpg" alt="">
+                        <p>Coffee Journey MSR Card</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s14.jpg" alt="">
+                        <p>Storefront Heritage Card</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s15.jpg" alt="">
+                        <p>Tyvek Bearista + Mini Coffee House Store Value Card 50 </p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s16.jpg" alt="">
+                        <p>Tyvek Back Pack</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s17.jpg" alt="">
+                        <p>Tyvek Pouch</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s18.jpg" alt="">
+                        <p>Tyvek Umbrella</p>
+                    </section>
+
+                    <section class="food">
+                        <img src="images/s20.jpg" alt="">
+                        <p>Notebook Set</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s21.jpg" alt="">
+                        <p>Lunch Box Set</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s22.jpg" alt="">
+                        <p>Mobile Power Pack</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s23.jpg" alt="">
+                        <p>12oz Coffee Story Glass / Lid Silicone Coffee Story</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s24.jpg" alt="">
+                        <p>12oz Coffee Journey Mug / Coffee Journey Filte</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s25.jpg" alt="">
+                        <p>12oz Green Life Mug / Coffee Farmer Bearista Cup Decoration</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s26.jpg" alt="">
+                        <p>14oz Coffee Story Mug / Coffee Story Mug Lid</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s27.jpg" alt="">
+                        <p>16oz Stanley French Press</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s28.jpg" alt="">
+                        <p>17oz Stanley SS TBL</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s29.jpg" alt="">
+                        <p>11oz Coffee Journey Glass</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s30.jpg" alt="">
+                        <p>16oz Coffee Journey SS CTG</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s31.jpg" alt="">
+                        <p>385ml Coffee Journey SS TBL</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s32.jpg" alt="">
+                        <p>13oz Elegant SS TBL</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s33.jpg" alt="">
+                        <p>12oz Elegant PL TBL</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s34.jpg" alt="">
+                        <p>16oz Splash PL CTG</p>
+                    </section>
+                    <section class="food">
+                        <img src="images/s35.jpg" alt="">
+                        <p>12oz Elegant SS TBL</p>
+                    </section>
+                </section>
+
+
+
+
+
+
+            </div>
+        </main>
+
+
+
+
+
+
+
+    </div>
+    <div class="button clearfix">
+        <button>Search Menu</button>
+    </div>
+
+
+</body>
+
+</html>
